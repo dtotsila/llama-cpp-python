@@ -51,7 +51,7 @@ import llama_cpp._internals as internals
 from ._logger import set_verbose
 from ._utils import suppress_stdout_stderr
 
-
+_rpc_devices_registered = False
 from llama_cpp.llama_cpp import _lib  # now _lib holds the shared library handle
 
 def add_rpc_devices(servers: str) -> None:
